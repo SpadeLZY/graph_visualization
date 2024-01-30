@@ -1,0 +1,21 @@
+digraph G {
+"config.py" [shape=box];
+"config.py" -> "log.log";
+"after_nate.py" [shape=box];
+"after_nate.py" -> "api_login";
+"after_nate.py" -> "passenger";
+"api_with_cookie.py" [shape=box];
+"api_with_cookie.py" -> "global_var";
+"qr_login.py" [shape=box];
+"qr_login.py" -> "api_login";
+"api_login.py" [shape=box];
+"api_login.py" -> "global_var";
+"query_and_order.py" [shape=box];
+"query_and_order.py" -> "util";
+"query_and_order.py" -> "ticket.query_left_ticket";
+"query_and_order.py" -> "passenger";
+"query_and_order.py" -> "global_var";
+"login.py" [shape=box];
+"login.py" -> "api_login";
+"login.py" -> "global_var";
+}
